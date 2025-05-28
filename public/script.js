@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const service_needed = document.getElementById('service').value;
     const preferred_date = new Date().toISOString().slice(0, 10); // default to today
     const message = document.getElementById('message').value.trim();
-
+//connect to localhost
     try {
       const response = await fetch('http://localhost:3000/bookings', {
         method: 'POST',
