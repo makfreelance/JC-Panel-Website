@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('message').value.trim();
 //connect to localhost
     try {
-      const response = await fetch('http://localhost:3000/bookings', {
+      const response = await fetch('https://jc-panel-website.onrender.com/bookings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
