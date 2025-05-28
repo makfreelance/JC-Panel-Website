@@ -1,0 +1,252 @@
+*{
+    margin :0 ;
+    padding :0;
+  font-family: "DM Sans", sans-serif;
+  
+
+}
+
+.header
+{
+   width: 100%;
+   min-height: 100vh ;
+   background : linear-gradient(rgba(32, 39, 81, 0.923),rgba(13, 27, 81, 0.688)),url(background.webp)no-repeat center/cover ;
+   background-position: center ;
+   background-size: cover ;
+   position: relative;
+}
+nav
+ {
+ display: flex;
+ padding: 2% 6% ;
+ justify-content: space-between;
+ align-items: center;
+ }
+nav img {
+    width: 150px ;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul{
+    list-style: none;
+}
+
+.nav-links ul li{
+    list-style: none ;
+    display: inline-block;
+    padding :8px 12px ;
+    position : relative;
+}
+
+.nav-links ul li a {
+color:#bcb9b9;
+text-decoration :none ;
+font-size : 13px ;
+}
+.nav-links ul li::after {
+    content:'';
+    width : 0% ;
+    height: 2px;
+    background: #485e64; 
+    display: block;
+    margin :auto;
+    transition :0.5s;
+}
+
+.nav-links ul li :hover::after {
+width : 100% ;
+}
+
+.text-box h1
+{
+    font-size:62px;
+    margin-bottom :20px;
+    
+}
+
+.text-box{
+    width:90% ;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50% ;
+    transform:translate(-50%,-50%);
+    text-align: center ;
+}
+
+.text-box p{
+    margin: 10px 0 40px ;
+    font-size: 14px ;
+    color :#fff;
+ 
+
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration:none ;
+    color : #fff;
+    border : 1px solid #fff;
+    padding:12px 34px ;
+    font-size : 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer ;
+}
+.hero-btn:hover{
+    border :1px solid #238e73c7 ;
+    background:#238e73c7 ;
+    transition: 1s ;
+}
+
+nav .fa{
+    display: none ;
+}
+
+/*mobile menu*/
+@media(max-width:700px){
+    .text-box hl
+{
+    font-size:62 ;
+}
+.nav-links ul li{
+    display :block ;
+}
+    .nav-links {
+        position: fixed;
+        background:#238e73c7;
+        height :100vh ;
+        width :200px;
+        top:0;
+        right: -200px ;
+        text-align : right ;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display:block;
+        color: #fff;
+        margin :10px;
+        cursor: pointer ;
+    }
+    .nav-links ul {
+        padding: 32px;
+
+    }
+}
+/*-----------Services and Products-----*/
+
+.Services-Products {
+    width: 80%;
+    margin :auto ;
+    text-align:center ;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+h1{
+    margin-bottom: 1rem;
+    font-size: 40px;
+    font-weight:600;
+}
+
+p{
+    color:#666;
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+    padding: 10px;
+   
+    
+}
+
+ /* Set default font for body */
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        
+        /* Services section styling */
+        #Services {
+            text-align: center;
+            width: 80%;
+            margin:auto;
+            padding-top: 100px;
+            padding: 50px ;
+        }
+        
+        #Services h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #2c384c;
+        }
+        
+        #Services p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        /* Service cards container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+        }
+        
+        /* Individual service card styling */
+        .services-card-bg-white {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+        
+        .services-card-bg-white:hover {
+            transform: translate(-10px);
+             box-shadow: 0 20px 25px -5px rgba(44, 56, 76, 0.514), 0 10px 10px -5px rgba(16, 18, 47, 0.04);
+        }
+        
+        .services-card-bg-white img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .services-card-bg-white .p-6 {
+            padding: 20px;
+        }
+.services-card-bg-white h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #2c384c;
+}
+
+.services-card-bg-white p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+         
+         .booking-form {
+            background-image: linear-gradient(rgba(58, 64, 112, 0.566), rgba(66, 60, 109, 0.7)), url(logo.png);
+            background-size: cover;
+            background-position: center;
+              padding: 60px 20px;
+             text-align: center;
+            position: relative;
+            
+        }
+      
